@@ -1,0 +1,10 @@
+model,num_features,unique_change_types,min_depth,max_depth,avg_depth,count_values_changed,count_iterable_item_added,count_iterable_item_removed,count_type_changes,count_dictionary_item_added,count_dictionary_item_removed
+claude-3-7-sonnet-20250219,157,5,1,6,5.057324840764331,68,84,3,1.0,1.0,
+claude-3-7-sonnet-20250219-non-reasoning,159,5,1,10,5.182389937106918,82,71,3,1.0,2.0,
+deepseek-r1,134,6,1,37,5.029850746268656,61,31,29,4.0,3.0,6.0
+deepseek-v3-0324,218,3,1,6,5.1192660550458715,108,100,10,,,
+gpt-4.1,212,5,1,6,5.212264150943396,99,105,6,1.0,1.0,
+llama3.3-70b,235,6,1,24,5.910638297872341,108,84,38,1.0,2.0,2.0
+o4-mini,342,5,1,9,5.6725146198830405,102,205,31,1.0,3.0,
+gpt-4o-mini,126,6,1,6,4.595238095238095,81,16,20,1.0,1.0,7.0
+qwen2.5-32b-instruct,192,5,1,24,5.84375,108,64,18,1.0,1.0,

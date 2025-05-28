@@ -1,0 +1,81 @@
+website,category,count
+airbnb,initial load performance,5
+airbnb,interactivity performance,3
+airbnb,network optimization,2
+airbnb,resource optimization,6
+airbnb,runtime performance,2
+airbnb,visual stability,1
+aliexpress,initial load performance,5
+aliexpress,interactivity performance,3
+aliexpress,network optimization,4
+aliexpress,resource optimization,6
+aliexpress,runtime performance,4
+aliexpress,visual stability,4
+ebay,initial load performance,5
+ebay,interactivity performance,3
+ebay,network optimization,3
+ebay,resource optimization,7
+ebay,runtime performance,3
+ebay,visual stability,2
+facebook,initial load performance,2
+facebook,network optimization,1
+facebook,resource optimization,1
+facebook,visual stability,2
+github,initial load performance,6
+github,interactivity performance,2
+github,network optimization,2
+github,resource optimization,5
+github,visual stability,2
+linkedin,initial load performance,5
+linkedin,interactivity performance,2
+linkedin,network optimization,2
+linkedin,resource optimization,4
+linkedin,visual stability,2
+medium,initial load performance,5
+medium,interactivity performance,3
+medium,network optimization,2
+medium,resource optimization,2
+netflix,initial load performance,6
+netflix,interactivity performance,3
+netflix,network optimization,4
+netflix,resource optimization,4
+netflix,runtime performance,1
+pinterest,initial load performance,5
+pinterest,interactivity performance,4
+pinterest,network optimization,4
+pinterest,resource optimization,5
+pinterest,runtime performance,3
+pinterest,visual stability,2
+quora,initial load performance,5
+quora,interactivity performance,3
+quora,network optimization,2
+quora,resource optimization,3
+quora,runtime performance,1
+quora,visual stability,2
+reddit,initial load performance,6
+reddit,interactivity performance,4
+reddit,network optimization,2
+reddit,resource optimization,4
+reddit,visual stability,1
+twitch,initial load performance,4
+twitch,interactivity performance,4
+twitch,network optimization,2
+twitch,resource optimization,4
+twitch,runtime performance,3
+twitch,visual stability,4
+twitter,initial load performance,4
+twitter,interactivity performance,3
+twitter,network optimization,1
+twitter,resource optimization,2
+twitter,visual stability,2
+walmart,initial load performance,5
+walmart,interactivity performance,3
+walmart,network optimization,3
+walmart,resource optimization,4
+walmart,runtime performance,3
+youtube,initial load performance,5
+youtube,interactivity performance,4
+youtube,network optimization,2
+youtube,resource optimization,3
+youtube,runtime performance,3
+youtube,visual stability,2

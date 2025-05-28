@@ -1,0 +1,178 @@
+# eval-html:
+#   user: |
+#     You are a web performance expert and your task is to optimize the HTML code for performance issues. 
+
+#     ## Task
+#     Due to the huge token size of HTML files, 
+#     You are given the HTML in chunks, one at a time.
+#     You are also given the performance issue(s) detected by Lighthouse to resolve, in the following format:
+#     Please modify each HTML code chunk to resolve the performance issue(s) given below.
+#     Return the modified HTML code alone, making only necessary changes for performance optimization.
+
+#     ## Instructions
+#     Make sure you:
+#     - Remember the code is split into chunks and you are only receiving one chunk at a time, there might be some unclosed or cut elements, do not worry about that.
+#     - Consider that a chunk might be a part of a larger element, so the code might not be complete.
+#     - Consider that the HTML as a whole is from production and might be minified, uglified or compressed.
+#     - DO NOT modify class names
+#     - Do not change chunk IDs ie the prop values for data-chunk-uuid, and chunk_style_[uuid]
+#     - DO NOT remove any comments already in the code.
+#     - DO NOT change any styles or functionalities of the code.
+#     - DO NOT change the structure of the code.
+#     - DO NOT change the order of the code.
+#     - DO NOT remove critical elements.
+#     - If any optimizations are made, return `<!-- Optimized by LLM -->` at the beginning point of only the modified portion
+#       and `<!-- End of Optimization: {{audit_key of issue being resolved}} => {{one line short description of elements/things resolved}} -->` at the end of the changed portion. 
+#       Do not indicate any resolution outside of the End of Optimization comment, where there are multiple resolutions being made, seperate them with commas within the End of optimization comment.
+#     - If you cannot make an optimization due to the above reasons but can provide a very brief suggestion, do so by adding a comment at the end of the chunk, starting with `<!-- Suggestion: {{audit_key of issue being addressed}} ` and ending with ` -->`.
+#     - Prioritize optimizations above suggestions where you can.
+#     - Return ONLY the modified HTML code, no long notes. 
+#     - Making only necessary changes for performance optimization.
+#     - If no optimizations are possible, return the original code.
+#     - Never add any additional comments to the code besides the ones for describing where optimizations were made by you.
+#     - If the change is within a `<style>` tag, replace the HTML comment with a CSS comment.
+    
+#     ## Original HTML Chunk
+#     ```html
+#     {{content}}
+#     ```
+
+#     ## Performance Issue
+#     {{audit_issues}}
+
+#   variables:
+#     - audit_issues
+#     - content
+#   output:
+#     - html
+
+eval-html:
+  user: |
+    You are a web performance expert tasked with optimizing HTML for performance issues reported by Lighthouse.
+
+    ## Context
+    - HTML is provided **in chunks**, due to token size limitations.
+    - You are given the chunks, one at a time.
+    - Chunks may be partial (e.g., unclosed tags, cut elements) and may be minified, uglified, or compressed.
+
+    ## Task
+    Modify the given HTML chunk to address the performance issue(s) below. Only make changes strictly necessary for resolving the issue(s).
+
+    ## Rules
+    - **Do NOT modify** class names, `data-chunk-uuid`, or `chunk_style_[uuid]`.
+    - **Do NOT change** code structure, order, or behavior.
+    - **Do NOT remove** existing comments or critical elements.
+    - **Do NOT add** any comments except those for your modifications/suggestions.
+    - **Do NOT change** critical styles or functionalities.
+    - For any optimizations:
+      - If any optimizations are made, wrap only the exact lines or attributes that are changed with:
+        `<!-- Optimized by LLM -->` directly before the first changed line or part
+        `<!-- End of Optimization: {{ audit_key }} => {{ brief description of the change made }} -->` directly after the last changed line or part.
+      - **Only** include the audit key(s) being resolved in the `End of Optimization` comment, not the entire list of audits provided.
+      - Strict Example: 
+        ```html
+        <div class="example">
+          <!-- Optimized by LLM -->
+          <img src="image.jpg" loading="lazy" alt="Example Image">
+          <!-- End of Optimization: image-loading => Added lazy loading to image -->
+        </div>
+        ```
+      - **Do not** insert any extra explanation comments such as <!-- Optimizing ... -->, summaries, or metadata.
+      - Use **commas** to separate multiple audit resolutions in one block for only the audit resolutions being done within that block.
+      - If **no safe optimization** is possible, but a suggestion is available, wrap the area with:
+        - `<!-- Suggestion for {{ audit_key }}: {{ short suggestion for a fix }} -->` directly before the first line or part for the suggestion.
+        -  `<!-- End of Suggestion -->` directly after the last line for the suggestion.
+        - Only include the audit key that is being addressed in the `Suggestion` comment, not the entire list of audits provided.
+        - Strict Example:
+          ```html
+          <div class="example">
+            <!-- Suggestion for image-loading: Consider using a more efficient image format -->
+            <img src="image.jpg" alt="Example Image">
+            <!-- End of Suggestion -->
+          </div>
+          ```
+      - If inside a `<style>` tag, use CSS-style comments (`/* ... */`) instead. 
+      - If inside a `<script>` tag, use JavaScript-style comments (`// ...`).
+      - Make sure you wrap around actual elements, the wrappers should not be empty.
+    - Prioritize actual changes over suggestions when feasible.
+    - Return **only** the modified HTML code — no extra notes or summaries.
+    - If nothing can be optimized, return the original HTML code as-is.
+
+    ## Input
+    ### HTML Chunk
+    ```html
+    {{content}}
+    ```
+
+    ### Performance Issue(s)
+    {{audit_issues}}
+
+  variables:
+    - audit_issues
+    - content
+  output:
+    - html
+
+
+eval-html-with-skeleton:
+  user: |
+    You are a web performance expert tasked with optimizing HTML for performance issues reported by Lighthouse.
+
+    ## Context
+    - HTML is provided **in chunks**, due to token size limitations.
+    - You are given the HTML in chunks, one at a time.
+    - Chunks may be partial (e.g., unclosed tags, cut elements) and may be minified, uglified, or compressed.
+    - You are also provided with the performance issue(s) detected by Lighthouse to resolve, in the following format:
+      """
+      {{ audit_key }}: {{ audit_title }}
+      {{audit_description}}
+
+      Possible trace for {{ audit_key }}:
+      {{audit_trace}}
+      """
+    - You are provided with the skeleton of the entire HTML document, showing the entire structure of the document as well as a pointer to the current chunk you are working on.
+
+    ## Task
+    Modify the given HTML chunk to address the performance issue(s) below. Only make changes strictly necessary for resolving the issue(s).
+
+    ## Rules
+    - **Do NOT modify** class names, `data-chunk-uuid`, or `chunk_style_[uuid]`.
+    - **Do NOT change** code structure, order, or behavior.
+    - **Do NOT remove** existing comments or critical elements.
+    - **Do NOT add** any comments except those for your modifications/suggestions.
+    - **Do NOT change** critical styles or functionalities.
+    - For any optimizations:
+      - If any optimizations are made, wrap only the exact lines or attributes that are changed with:
+        `<!-- Optimized by LLM -->` directly before the first changed line or part
+        `<!-- End of Optimization: {{ audit_key }} => {{ brief description of the change made }} -->` directly after the last changed line or part.
+      - **Do not** insert any extra explanation comments such as <!-- Optimizing ... -->, summaries, or metadata.
+      - Use **commas** to separate multiple audit resolutions in one block for only the audit resolutions being done within that block.
+      - If **no safe optimization** is possible, but a suggestion is available, wrap the area with:
+        - `<!-- Suggestion for {{ audit_key }}: {{ short suggestion for a fix }} -->` directly before the first line or part for the suggestion.
+        -  `<!-- End of Suggestion -->` directly after the last line for the suggestion.
+      - If inside a `<style>` tag, use CSS-style comments (`/* ... */`) instead.
+      - Make sure you wrap around actual elements, the wrappers should not be empty.
+    - Prioritize actual changes over suggestions when feasible.
+    - Return **only** the modified HTML code — no extra notes or summaries.
+    - If nothing can be optimized, return the original HTML code as-is.
+
+    ## Input
+    ### HTML Skeleton
+    ```html
+    {{skeleton}}
+    ```
+
+    ### HTML Chunk
+    ```html
+    {{content}}
+    ```
+
+    ### Performance Issue(s)
+    {{audit_issues}}
+
+  variables:
+    - audit_issues
+    - content
+    - skeleton
+  output:
+    - html

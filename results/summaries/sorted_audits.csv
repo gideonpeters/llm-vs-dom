@@ -1,0 +1,39 @@
+id,count,incidence_ratio,category
+first-contentful-paint,15,1.0,initial load performance
+largest-contentful-paint,15,1.0,initial load performance
+unused-javascript,15,1.0,resource optimization
+uses-text-compression,14,0.9333333333333333,network optimization
+speed-index,14,0.9333333333333333,initial load performance
+interactive,14,0.9333333333333333,interactivity performance
+largest-contentful-paint-element,14,0.9333333333333333,initial load performance
+max-potential-fid,13,0.8666666666666667,interactivity performance
+legacy-javascript,12,0.8,resource optimization
+total-blocking-time,12,0.8,interactivity performance
+unused-css-rules,11,0.7333333333333333,resource optimization
+third-party-summary,9,0.6,runtime performance
+uses-long-cache-ttl,9,0.6,network optimization
+render-blocking-resources,8,0.5333333333333333,initial load performance
+modern-image-formats,7,0.4666666666666667,resource optimization
+bf-cache,7,0.4666666666666667,
+mainthread-work-breakdown,7,0.4666666666666667,runtime performance
+uses-responsive-images,7,0.4666666666666667,resource optimization
+dom-size,7,0.4666666666666667,visual stability
+unsized-images,6,0.4,visual stability
+total-byte-weight,6,0.4,network optimization
+uses-passive-event-listeners,5,0.3333333333333333,interactivity performance
+bootup-time,5,0.3333333333333333,runtime performance
+cumulative-layout-shift,5,0.3333333333333333,visual stability
+uses-rel-preconnect,4,0.26666666666666666,network optimization
+viewport,4,0.26666666666666666,visual stability
+offscreen-images,4,0.26666666666666666,initial load performance
+unminified-javascript,3,0.2,resource optimization
+unminified-css,3,0.2,resource optimization
+uses-http2,2,0.13333333333333333,network optimization
+no-document-write,2,0.13333333333333333,runtime performance
+lcp-lazy-loaded,2,0.13333333333333333,initial load performance
+layout-shifts,2,0.13333333333333333,visual stability
+font-display,2,0.13333333333333333,visual stability
+prioritize-lcp-image,1,0.06666666666666667,initial load performance
+uses-optimized-images,1,0.06666666666666667,resource optimization
+duplicated-javascript,1,0.06666666666666667,resource optimization
+redirects,1,0.06666666666666667,network optimization

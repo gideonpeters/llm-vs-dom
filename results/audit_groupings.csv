@@ -1,0 +1,68 @@
+audit_name,category
+first-contentful-paint,initial load performance
+speed-index,initial load performance
+total-blocking-time,interactivity performance
+max-potential-fid,interactivity performance
+interactive,interactivity performance
+unused-javascript,resource optimization
+largest-contentful-paint-element,initial load performance
+largest-contentful-paint,initial load performance
+errors-in-console,runtime performance
+uses-text-compression,network optimization
+legacy-javascript,resource optimization
+third-party-summary,runtime performance
+mainthread-work-breakdown,runtime performance
+bootup-time,runtime performance
+unused-css-rules,resource optimization
+inspector-issues,runtime performance
+render-blocking-resources,initial load performance
+uses-long-cache-ttl,network optimization
+third-party-cookies,network optimization
+deprecations,runtime performance
+uses-responsive-images,resource optimization
+dom-size,visual stability
+is-on-https,network optimization
+target-size,visual stability
+modern-image-formats,resource optimization
+offscreen-images,initial load performance
+unsized-images,visual stability
+cumulative-layout-shift,visual stability
+color-contrast,visual stability
+font-display,visual stability
+font-size,visual stability
+uses-passive-event-listeners,interactivity performance
+total-byte-weight,network optimization
+uses-rel-preconnect,network optimization
+viewport,visual stability
+aria-hidden-focus,accessibility
+charset,initial load performance
+crawlable-anchors,SEO
+meta-viewport,visual stability
+link-text,SEO
+uses-optimized-images,resource optimization
+unminified-css,resource optimization
+image-aspect-ratio,visual stability
+lcp-lazy-loaded,initial load performance
+layout-shifts,visual stability
+is-crawlable,SEO
+uses-http2,network optimization
+image-alt,accessibility
+no-document-write,runtime performance
+image-size-responsive,visual stability
+aria-dialog-name,accessibility
+aria-prohibited-attr,accessibility
+unminified-javascript,resource optimization
+valid-source-maps,runtime performance
+listitem,accessibility
+list,accessibility
+prioritize-lcp-image,initial load performance
+hreflang,SEO
+duplicated-javascript,resource optimization
+meta-description,SEO
+redirects,network optimization
+html-lang-valid,accessibility
+aria-allowed-attr,accessibility
+input-button-name,accessibility
+link-name,accessibility
+label-content-name-mismatch,accessibility
+aria-tooltip-name,accessibility

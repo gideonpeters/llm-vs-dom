@@ -1,0 +1,55 @@
+category,model,percentage_change
+initial load performance,claude-3-7-sonnet-20250219,-18.57
+initial load performance,claude-3-7-sonnet-20250219-non-reasoning,-14.72
+initial load performance,deepseek-r1,-23.97
+initial load performance,deepseek-v3-0324,-30.67
+initial load performance,gpt-4.1,-46.52
+initial load performance,gpt-4o-mini,24.84
+initial load performance,llama3.3-70b,-28.71
+initial load performance,o4-mini,-26.22
+initial load performance,qwen2.5-32b-instruct,-64.36
+interactivity performance,claude-3-7-sonnet-20250219,-5.0
+interactivity performance,claude-3-7-sonnet-20250219-non-reasoning,6.09
+interactivity performance,deepseek-r1,-21.58
+interactivity performance,deepseek-v3-0324,-21.09
+interactivity performance,gpt-4.1,-35.69
+interactivity performance,gpt-4o-mini,7.88
+interactivity performance,llama3.3-70b,-54.69
+interactivity performance,o4-mini,-9.3
+interactivity performance,qwen2.5-32b-instruct,-64.99
+network optimization,claude-3-7-sonnet-20250219,-14.35
+network optimization,claude-3-7-sonnet-20250219-non-reasoning,-14.35
+network optimization,deepseek-r1,-33.4
+network optimization,deepseek-v3-0324,-30.09
+network optimization,gpt-4.1,-48.68
+network optimization,gpt-4o-mini,-17.13
+network optimization,llama3.3-70b,-35.05
+network optimization,o4-mini,-37.96
+network optimization,qwen2.5-32b-instruct,-64.68
+resource optimization,claude-3-7-sonnet-20250219,4.23
+resource optimization,claude-3-7-sonnet-20250219-non-reasoning,-8.47
+resource optimization,deepseek-r1,-34.58
+resource optimization,deepseek-v3-0324,-11.33
+resource optimization,gpt-4.1,-32.28
+resource optimization,gpt-4o-mini,-4.94
+resource optimization,llama3.3-70b,-30.7
+resource optimization,o4-mini,-20.5
+resource optimization,qwen2.5-32b-instruct,-55.26
+runtime performance,claude-3-7-sonnet-20250219,-11.11
+runtime performance,claude-3-7-sonnet-20250219-non-reasoning,-9.13
+runtime performance,deepseek-r1,-32.62
+runtime performance,deepseek-v3-0324,-47.54
+runtime performance,gpt-4.1,-37.38
+runtime performance,gpt-4o-mini,58.97
+runtime performance,llama3.3-70b,-76.15
+runtime performance,o4-mini,-31.83
+runtime performance,qwen2.5-32b-instruct,-88.65
+visual stability,claude-3-7-sonnet-20250219,30.0
+visual stability,claude-3-7-sonnet-20250219-non-reasoning,21.67
+visual stability,deepseek-r1,38.13
+visual stability,deepseek-v3-0324,14.64
+visual stability,gpt-4.1,-22.02
+visual stability,gpt-4o-mini,28.33
+visual stability,llama3.3-70b,-39.29
+visual stability,o4-mini,-6.03
+visual stability,qwen2.5-32b-instruct,-35.83

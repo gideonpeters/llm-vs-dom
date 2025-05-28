@@ -1,0 +1,39 @@
+,audit_name,original_incidence_ratio,modified_incidence_ratio,initial_count,modified_count,total_websites,category,percentage_change
+15,bf-cache,0.4666666666666667,0.0,7,0,15,,-100.0
+24,uses-rel-preconnect,0.26666666666666666,0.06666666666666667,4,1,15,network optimization,-75.0
+28,unminified-css,0.2,0.06666666666666667,3,1,15,resource optimization,-66.66666666666667
+27,unminified-javascript,0.2,0.06666666666666667,3,1,15,resource optimization,-66.66666666666667
+14,modern-image-formats,0.4666666666666667,0.3333333333333333,7,5,15,resource optimization,-28.571428571428577
+26,offscreen-images,0.26666666666666666,0.2,4,3,15,initial load performance,-24.999999999999993
+20,total-byte-weight,0.4,0.3333333333333333,6,5,15,network optimization,-16.66666666666668
+13,render-blocking-resources,0.5333333333333333,0.4666666666666667,8,7,15,initial load performance,-12.499999999999996
+12,uses-long-cache-ttl,0.6,0.5333333333333333,9,8,15,network optimization,-11.111111111111109
+6,largest-contentful-paint-element,0.9333333333333333,0.8666666666666667,14,13,15,initial load performance,-7.1428571428571415
+1,largest-contentful-paint,1.0,0.9333333333333333,15,14,15,initial load performance,-6.666666666666665
+0,first-contentful-paint,1.0,1.0,15,15,15,initial load performance,0.0
+25,viewport,0.26666666666666666,0.26666666666666666,4,4,15,visual stability,0.0
+29,uses-http2,0.13333333333333333,0.13333333333333333,2,2,15,network optimization,0.0
+30,no-document-write,0.13333333333333333,0.13333333333333333,2,2,15,runtime performance,0.0
+32,layout-shifts,0.13333333333333333,0.13333333333333333,2,2,15,visual stability,0.0
+21,uses-passive-event-listeners,0.3333333333333333,0.3333333333333333,5,5,15,interactivity performance,0.0
+19,unsized-images,0.4,0.4,6,6,15,visual stability,0.0
+18,dom-size,0.4666666666666667,0.4666666666666667,7,7,15,visual stability,0.0
+17,uses-responsive-images,0.4666666666666667,0.4666666666666667,7,7,15,resource optimization,0.0
+2,unused-javascript,1.0,1.0,15,15,15,resource optimization,0.0
+3,uses-text-compression,0.9333333333333333,0.9333333333333333,14,14,15,network optimization,0.0
+4,speed-index,0.9333333333333333,0.9333333333333333,14,14,15,initial load performance,0.0
+36,duplicated-javascript,0.06666666666666667,0.06666666666666667,1,1,15,resource optimization,0.0
+37,redirects,0.06666666666666667,0.06666666666666667,1,1,15,network optimization,0.0
+5,interactive,0.9333333333333333,1.0,14,15,15,interactivity performance,7.1428571428571415
+7,max-potential-fid,0.8666666666666667,0.9333333333333333,13,14,15,interactivity performance,7.69230769230769
+8,legacy-javascript,0.8,0.8666666666666667,12,13,15,resource optimization,8.333333333333332
+10,unused-css-rules,0.7333333333333333,0.8,11,12,15,resource optimization,9.090909090909104
+9,total-blocking-time,0.8,0.9333333333333333,12,14,15,interactivity performance,16.666666666666664
+23,cumulative-layout-shift,0.3333333333333333,0.4,5,6,15,visual stability,20.00000000000001
+11,third-party-summary,0.6,0.8666666666666667,9,13,15,runtime performance,44.44444444444445
+16,mainthread-work-breakdown,0.4666666666666667,0.8,7,12,15,runtime performance,71.42857142857143
+34,prioritize-lcp-image,0.06666666666666667,0.13333333333333333,1,2,15,initial load performance,100.0
+35,uses-optimized-images,0.06666666666666667,0.13333333333333333,1,2,15,resource optimization,100.0
+22,bootup-time,0.3333333333333333,0.7333333333333333,5,11,15,runtime performance,120.0
+31,lcp-lazy-loaded,0.13333333333333333,0.3333333333333333,2,5,15,initial load performance,150.0
+33,font-display,0.13333333333333333,0.3333333333333333,2,5,15,visual stability,150.0

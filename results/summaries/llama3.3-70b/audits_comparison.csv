@@ -1,0 +1,39 @@
+,audit_name,original_incidence_ratio,modified_incidence_ratio,initial_count,modified_count,total_websites,category,percentage_change
+25,viewport,0.26666666666666666,0.0,4,0,15,visual stability,-100.0
+35,uses-optimized-images,0.06666666666666667,0.0,1,0,15,resource optimization,-100.0
+34,prioritize-lcp-image,0.06666666666666667,0.0,1,0,15,initial load performance,-100.0
+21,uses-passive-event-listeners,0.3333333333333333,0.0,5,0,15,interactivity performance,-100.0
+11,third-party-summary,0.6,0.06666666666666667,9,1,15,runtime performance,-88.8888888888889
+16,mainthread-work-breakdown,0.4666666666666667,0.06666666666666667,7,1,15,runtime performance,-85.71428571428572
+18,dom-size,0.4666666666666667,0.06666666666666667,7,1,15,visual stability,-85.71428571428572
+22,bootup-time,0.3333333333333333,0.06666666666666667,5,1,15,runtime performance,-80.0
+20,total-byte-weight,0.4,0.13333333333333333,6,2,15,network optimization,-66.66666666666667
+13,render-blocking-resources,0.5333333333333333,0.2,8,3,15,initial load performance,-62.5
+9,total-blocking-time,0.8,0.3333333333333333,12,5,15,interactivity performance,-58.333333333333336
+26,offscreen-images,0.26666666666666666,0.13333333333333333,4,2,15,initial load performance,-50.0
+19,unsized-images,0.4,0.2,6,3,15,visual stability,-50.0
+29,uses-http2,0.13333333333333333,0.06666666666666667,2,1,15,network optimization,-50.0
+24,uses-rel-preconnect,0.26666666666666666,0.13333333333333333,4,2,15,network optimization,-50.0
+30,no-document-write,0.13333333333333333,0.06666666666666667,2,1,15,runtime performance,-50.0
+33,font-display,0.13333333333333333,0.06666666666666667,2,1,15,visual stability,-50.0
+7,max-potential-fid,0.8666666666666667,0.4666666666666667,13,7,15,interactivity performance,-46.15384615384615
+14,modern-image-formats,0.4666666666666667,0.26666666666666666,7,4,15,resource optimization,-42.85714285714286
+15,bf-cache,0.4666666666666667,0.26666666666666666,7,4,15,,-42.85714285714286
+28,unminified-css,0.2,0.13333333333333333,3,2,15,resource optimization,-33.333333333333336
+0,first-contentful-paint,1.0,0.6666666666666666,15,10,15,initial load performance,-33.333333333333336
+8,legacy-javascript,0.8,0.5333333333333333,12,8,15,resource optimization,-33.333333333333336
+17,uses-responsive-images,0.4666666666666667,0.3333333333333333,7,5,15,resource optimization,-28.571428571428577
+6,largest-contentful-paint-element,0.9333333333333333,0.6666666666666666,14,10,15,initial load performance,-28.571428571428577
+4,speed-index,0.9333333333333333,0.6666666666666666,14,10,15,initial load performance,-28.571428571428577
+1,largest-contentful-paint,1.0,0.7333333333333333,15,11,15,initial load performance,-26.66666666666667
+12,uses-long-cache-ttl,0.6,0.4666666666666667,9,7,15,network optimization,-22.222222222222218
+3,uses-text-compression,0.9333333333333333,0.7333333333333333,14,11,15,network optimization,-21.428571428571434
+2,unused-javascript,1.0,0.8,15,12,15,resource optimization,-19.999999999999996
+10,unused-css-rules,0.7333333333333333,0.6,11,9,15,resource optimization,-18.18181818181818
+5,interactive,0.9333333333333333,0.8,14,12,15,interactivity performance,-14.285714285714283
+23,cumulative-layout-shift,0.3333333333333333,0.3333333333333333,5,5,15,visual stability,0.0
+27,unminified-javascript,0.2,0.2,3,3,15,resource optimization,0.0
+36,duplicated-javascript,0.06666666666666667,0.06666666666666667,1,1,15,resource optimization,0.0
+37,redirects,0.06666666666666667,0.06666666666666667,1,1,15,network optimization,0.0
+32,layout-shifts,0.13333333333333333,0.2,2,3,15,visual stability,50.000000000000014
+31,lcp-lazy-loaded,0.13333333333333333,0.26666666666666666,2,4,15,initial load performance,100.0

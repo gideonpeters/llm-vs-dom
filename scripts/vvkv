@@ -1,0 +1,9 @@
+- Claude 3.7 Sonnet (Reasoning) 128K max output tokens, 200K context window
+- Claude 3.7 Sonnet (Non-Reasoning) 128K max output tokens, 200K context window
+- Deepseek V3 (Non-Reasoning) 32K max output tokens, 131K context window, 671B parameters
+- Deepseek R1 (Reasoning) 32K max output tokens, 128K context window, 685B parameters
+- Llama3.3-70B (Non-Reasoning) 40K max output tokens, 128K context window, 70B parameters
+- GPT4.1 (Non-Reasoning) 32K max output tokens, 1M+ context window
+- o4-mini (Reasoning) 100K max output tokens, 200K context window
+- GPT-4o-mini (Non-Reasoning) 16K max output tokens, 128K context window
+- GPT-4o (Non-Reasoning) 16K max output tokens, 128K context window

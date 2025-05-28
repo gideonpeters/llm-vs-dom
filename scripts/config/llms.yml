@@ -1,0 +1,688 @@
+default:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4-turbo-2024-04-09
+    rate_limit: 100
+  model_metadata:
+    name: GPT-4 Turbo
+    provider: OpenAI
+
+default-json:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+    response_format:
+      type: json_object
+  model_parameters:
+    model: gpt-4o-mini-2024-07-18
+    rate_limit: 200
+  model_metadata:
+    name: GPT-4o Mini
+    provider: OpenAI
+
+gpt-4o-2024-08-06:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4o-2024-08-06
+    rate_limit: 140
+  model_metadata:
+    name: GPT-4o
+    provider: OpenAI
+
+gpt-4o-2024-05-13:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4o-2024-05-13
+    rate_limit: 140
+  model_metadata:
+    name: GPT-4o
+    provider: OpenAI
+
+gpt-4o-2024-05-13-json:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+    response_format:
+      type: json_object
+  model_parameters:
+    model: gpt-4o-2024-05-13
+    rate_limit: 140
+  model_metadata:
+    name: GPT-4o
+    provider: OpenAI
+
+gpt-4-0613:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4-0613
+    rate_limit: 80
+  model_metadata:
+    name: GPT-4
+    provider: OpenAI
+
+gpt-4o-mini-2024-07-18:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4o-mini-2024-07-18
+    rate_limit: 200
+  model_metadata:
+    name: GPT-4o Mini
+    provider: OpenAI
+
+gpt-4o-mini-2024-07-18-json:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+    response_format:
+      type: json_object
+  model_parameters:
+    model: gpt-4o-mini-2024-07-18
+    rate_limit: 200
+  model_metadata:
+    name: GPT-4o Mini
+    provider: OpenAI
+
+gpt-4-turbo-2024-04-09:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4-turbo-2024-04-09
+    rate_limit: 100
+  model_metadata:
+    name: GPT-4 Turbo
+    provider: OpenAI
+
+o1-preview-2024-09-12:
+  custom_llm_provider: openai
+  sample_parameters:
+    seed: 42
+  model_parameters:
+    model: o1-preview-2024-09-12
+    rate_limit: 10
+  model_metadata:
+    name: O1 Preview
+    provider: OpenAI
+
+o1-mini-2024-09-12:
+  custom_llm_provider: openai
+  sample_parameters:
+    seed: 42
+  model_parameters:
+    model: o1-mini-2024-09-12
+    rate_limit: 10
+  model_metadata:
+    name: O1 Mini
+    provider: OpenAI
+
+gpt-4-1106-preview:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-4-1106-preview
+    rate_limit: 100
+  model_metadata:
+    name: GPT-4 Turbo
+    provider: OpenAI
+
+gpt-4-turbo-2024-04-09-json:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+    response_format:
+      type: json_object
+  model_parameters:
+    model: gpt-4-turbo-2024-04-09
+    rate_limit: 100
+  model_metadata:
+    name: GPT-4 Turbo
+    provider: OpenAI
+
+gpt-3.5-turbo-0125:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gpt-3.5-turbo-0125
+    rate_limit: 300
+  model_metadata:
+    name: GPT-3.5 Turbo
+    provider: OpenAI
+
+mistral-7b-v0.3:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: mistralai/Mistral-7B-Instruct-v0.3
+    rate_limit: 1000
+  model_metadata:
+    name: Mistral-7B Instruct-v3
+    provider: Mistral
+    size: 7
+
+llama3-8b:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: meta-llama/Llama-3-8b-chat-hf
+    rate_limit: 1000
+  model_metadata:
+    name: Llama3-8B Instruct
+    provider: Meta
+    size: 8
+
+llama3.3-70b:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0
+    max_tokens: 40000
+    seed: 42
+  model_parameters:
+    model: meta-llama/Llama-3.3-70B-Instruct-Turbo
+    rate_limit: 1000
+  model_metadata:
+    name: Llama3.3-70B Instruct
+    provider: Meta
+    size: 70
+
+llama3-70b:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: meta-llama/Llama-3-70b-chat-hf
+    rate_limit: 1000
+  model_metadata:
+    name: Llama3-70B Instruct
+    provider: Meta
+    size: 70
+
+llama3.1-70b:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: meta.llama3-1-70b-instruct-v1:0
+    rate_limit: 40
+    aws_region_name: us-west-2
+  model_metadata:
+    name: Llama3.1-70B Instruct
+    provider: Meta
+    size: 70
+
+llama3.1-8b:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: meta.llama3-1-8b-instruct-v1:0
+    rate_limit: 40
+    aws_region_name: us-west-2
+  model_metadata:
+    name: Llama3.1-8B Instruct
+    provider: Meta
+    size: 8
+
+llama3.1-405b-turbo:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo
+    rate_limit: 200
+  model_metadata:
+    name: Llama3.1-405B Instruct
+    provider: Meta
+    size: 405
+
+gemini-1.5-pro-preview-0514:
+  custom_llm_provider: vertex_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gemini-1.5-pro-preview-0514
+    rate_limit: 45
+    vertex_ai_location: europe-west4
+  model_metadata:
+    name: Gemini-1.5 Pro
+    provider: Google
+
+gemini-1.5-flash-preview-0514:
+  custom_llm_provider: vertex_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: gemini-1.5-flash-preview-0514
+    rate_limit: 100
+    vertex_ai_location: europe-west4
+  model_metadata:
+    name: Gemini-1.5 Flash
+    provider: Google
+
+gemma-2-27b-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: google/gemma-2-27b-it
+    rate_limit: 300
+  model_metadata:
+    name: Gemma-2-27B Instruct
+    provider: Google
+    size: 27
+
+gemma-2-9b-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: google/gemma-2-9b-it
+    rate_limit: 300
+  model_metadata:
+    name: Gemma-2-9B Instruct
+    provider: Google
+    size: 9
+
+qwen2.5-72b-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0
+    max_tokens: 32000
+    seed: 42
+  model_parameters:
+    model: Qwen/Qwen2.5-72B-Instruct-Turbo
+    rate_limit: 1000
+  model_metadata:
+    name: Qwen2.5-72B Instruct
+    provider: Alibaba
+    size: 72
+
+qwen2.5-32b-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0
+  model_parameters:
+    model: Qwen/Qwen2.5-Coder-32B-Instruct
+    rate_limit: 1000
+  model_metadata:
+    name: Qwen2.5-32B Instruct
+    provider: Alibaba
+    size: 32
+
+qwen2.5-7b-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: Qwen/Qwen2.5-7B-Instruct-Turbo
+    rate_limit: 1000
+  model_metadata:
+    name: Qwen2-72B Instruct
+    provider: Alibaba
+    size: 72
+
+deepseek-coder-v2:
+  custom_llm_provider: openai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: deepseek-coder
+    rate_limit: 200
+    api_key: DEEPSEEK_API_KEY
+    api_base: DEEPSEEK_API_BASE
+  model_metadata:
+    name: Deepseek Coder-v2 Instruct
+    provider: DeepSeek AI
+    size: 236
+
+deepseek-r1:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0
+    max_tokens: 164000
+    seed: 42
+  model_parameters:
+    model: deepseek-ai/DeepSeek-R1
+    rate_limit: 200
+  model_metadata:
+    name: Deepseek R1
+    provider: DeepSeek
+    size: 685
+
+deepseek-v3-0324:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0
+    max_tokens: 130000
+    seed: 42
+  model_parameters:
+    model: deepseek-ai/DeepSeek-V3
+    rate_limit: 200
+  model_metadata:
+    name: Deepseek V3
+    provider: DeepSeek
+    size: 671
+
+claude-3.5-sonnet:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: anthropic.claude-3-5-sonnet-20240620-v1:0
+    rate_limit: 40
+    aws_region_name: us-east-1
+  model_metadata:
+    name: Claude-v3.5 Sonnet
+    provider: Anthropic
+
+claude-3-opus-20240229:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: anthropic.claude-3-opus-20240229-v1:0
+    rate_limit: 40
+    aws_region_name: us-west-2
+  model_metadata:
+    name: Claude-v3 Opus
+    provider: Anthropic
+
+claude-3-sonnet-20240229:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: anthropic.claude-3-sonnet-20240229-v1:0
+    rate_limit: 40
+    aws_region_name: us-east-1
+  model_metadata:
+    name: Claude-v3 Sonnet
+    provider: Anthropic
+
+claude-3-haiku-20240307:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: anthropic.claude-3-haiku-20240307-v1:0
+    rate_limit: 40
+    aws_region_name: us-east-1
+  model_metadata:
+    name: Claude-v3 Haiku
+    provider: Anthropic
+
+command-r+:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: cohere.command-r-plus-v1:0
+    rate_limit: 40
+    aws_region_name: us-east-1
+  model_metadata:
+    name: Command R+
+    provider: Cohere
+    size: 104
+
+command-r:
+  custom_llm_provider: bedrock
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: cohere.command-r-v1:0
+    rate_limit: 40
+    aws_region_name: us-east-1
+  model_metadata:
+    name: Command R
+    provider: Cohere
+    size: 35
+
+dbrx-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: databricks/dbrx-instruct
+    rate_limit: 100
+  model_metadata:
+    name: DBRX Instruct
+    provider: Databricks
+    size: 132
+
+mixtral-8x22b-instruct:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: mistralai/Mixtral-8x22B-Instruct-v0.1
+    rate_limit: 100
+  model_metadata:
+    name: Mixtral-8x22B Instruct 
+    provider: Mistral
+    size: 141
+
+mistral-small-24b:
+  custom_llm_provider: mistral
+  sample_parameters:
+    temperature: 0
+    max_tokens: 32000
+    seed: 42
+  model_parameters:
+    model: mistralai/Mistral-Small-24B-Instruct-2501
+    rate_limit: 120
+  model_metadata:
+    name: Mistral Small 3
+    provider: Mistral
+    size: 24
+
+mistral-large-2407:
+  custom_llm_provider: mistral
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: mistral-large-2407
+    rate_limit: 120
+  model_metadata:
+    name: Mistral Large 2
+    provider: Mistral
+    size: 123
+
+mistral-nemo:
+  custom_llm_provider: mistral
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: open-mistral-nemo-2407
+    rate_limit: 120
+  model_metadata:
+    name: Mistral Nemo
+    provider: Mistral
+    size: 12
+
+codestral-mamba:
+  custom_llm_provider: mistral
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: codestral-mamba-2407
+    rate_limit: 120
+  model_metadata:
+    name: Codestral Mamba
+    provider: Mistral
+    size: 7
+
+codestral-2405:
+  custom_llm_provider: mistral
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: codestral-2405
+    rate_limit: 120
+  model_metadata:
+    name: Codestral
+    provider: Mistral
+    size: 22
+
+wizardlm-2-8x22b:
+  custom_llm_provider: together_ai
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: microsoft/WizardLM-2-8x22B
+    rate_limit: 100
+  model_metadata:
+    name: WizardLM-2 8x22B
+    provider: Microsoft
+    size: 141
+
+phi-3-mini:
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: microsoft/Phi-3-mini-128k-instruct
+    tensor_parallel_size: 8
+  model_metadata:
+    name: Phi-3 Mini Instruct
+    provider: Microsoft
+    size: 3.8
+
+phi-3-small:
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: microsoft/Phi-3-small-128k-instruct
+    tensor_parallel_size: 8
+  model_metadata:
+    name: Phi-3 Small Instruct
+    provider: Microsoft
+    size: 7
+
+phi-3-medium:
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: microsoft/Phi-3-medium-128k-instruct
+    tensor_parallel_size: 8
+  model_metadata:
+    name: Phi-3 Medium Instruct
+    provider: Microsoft
+    size: 14
+
+phi-3.5-moe:
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: microsoft/Phi-3.5-MoE-instruct
+    tensor_parallel_size: 8
+  model_metadata:
+    name: Phi-3.5 MoE Instruct
+    provider: Microsoft
+    size: 41.9
+
+llama3.1-nemotron-70b:
+  sample_parameters:
+    temperature: 0.01
+    max_tokens: 2048
+    seed: 42
+  model_parameters:
+    model: nvidia/Llama-3.1-Nemotron-70B-Instruct
+    tensor_parallel_size: 8
+  model_metadata:
+    name: Llama3.1-Nemotron-70B Instruct
+    provider: Nvidia
+    size: 70
